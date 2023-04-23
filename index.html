@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h2 class="titulo" style="text-transform: uppercase;">Ficha cadastral</h2>
+            <label for="nome">Nome:<input type="text" id="nome" name="nome" size="55"><br></label>
+
+            <div class="rg-cpf">
+                <label for="rg" class="rg-label">RG:<input type="text" id="rg" name="rg" class="rg" size="13"></label>
+                <label for="cpf">CPF:<input type="text" id="cpf" name="cpf" size="13"></label>
+            </div>
+
+            <label for="endereco" class="endereco-label">Endereço: <input type="text" id="endereco" name="endereco"
+                    size="55"></label>
+
+            <div class="sexo-data-nascimento">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" size="13">
+            </div>
+  
+            <div class="situacao-civil">
+                <div class="radio-inputs">
+                    <label class="radio">
+                        <input type="radio" name="radio" checked="">
+                        <span class="name">Solteiro(a)</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="radio">
+                        <span class="name">Casado(a)</span>
+                    </label>
+
+                    <label class="radio">
+                        <input type="radio" name="radio">
+                        <span class="name">Viúvo(a)</span>
+                    </label>
+                </div>
+            </div>
+
+            <button id="cadastro-btn">Cadastrar</button>
+        </form>
+    </div>
+</body>
+
+<script src="js/limparInputs.js"></script>
+
+</html>
